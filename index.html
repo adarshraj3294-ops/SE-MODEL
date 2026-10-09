@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TCC · Transport Company Computerisation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side">
+  <div class="brand">
+    <span class="logo"><svg viewBox="0 0 24 24"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+    <div><b>TCC</b><small>Transport Company<br>Computerisation</small></div>
+  </div>
+  <nav id="nav">
+    <button data-v="dashboard" class="on">Dashboard</button>
+    <button data-v="book">Book consignment</button>
+    <button data-v="dispatch">Allocate &amp; dispatch</button>
+    <button data-v="track">Track consignment</button>
+    <button data-v="fleet">Truck tracking</button>
+    <button data-v="branches">Branches</button>
+    <button data-v="trucks">Trucks &amp; utilization</button>
+    <button data-v="reports">Revenue reports</button>
+  </nav>
+  <p class="foot">CS387 · Software Engineering Lab<br>Problem 12</p>
+</aside>
+<main>
+  <header class="top">
+    <div><h1 id="title">Dashboard</h1><p id="sub"></p></div>
+  </header>
+  <section id="view"></section>
+</main>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
